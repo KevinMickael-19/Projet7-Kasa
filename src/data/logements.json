@@ -1,7 +1,7 @@
 [
 	{
 		"id": "c67ab8a7",
-		"titre": "Appartement confortable",
+		"title": "Appartement confortable",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
 		"images" : [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
@@ -248,7 +248,7 @@
 	},
 	{
 		"id": "cb2f9222",
-		"titre": "Suite familiale",
+		"title": "Suite familiale",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-1.jpg",
 		"images" : [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-1.jpg",
@@ -438,7 +438,7 @@
 	},
 	{
 		"id": "ba55a0cc",
-		"titre": "Maison T5 - Le Vésinet",
+		"title": "Maison T5 - Le Vésinet",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-1.jpg",
 		"images" : [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-1.jpg",
@@ -538,7 +538,7 @@
 	},
 	{
 		"id": "2139a317",
-		"titre": "Pas cher - Chambre Paris 20",
+		"title": "Pas cher - Chambre Paris 20",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg",
 		"images" : [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg"
@@ -562,7 +562,7 @@
 	},
 	{
 		"id": "6ff132c6",
-		"titre": "Studio Charmant",
+		"title": "Studio Charmant",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-18-1.jpg",
 		"images" : [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-18-1.jpg",
