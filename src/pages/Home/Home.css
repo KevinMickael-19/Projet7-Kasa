@@ -7,3 +7,24 @@
   background-color: #F6F6F6;
   border-radius: 25px;
 }
+
+/* Responsive tablette */
+
+@media (max-width: 1024px) {
+  .home__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* Responsive mobile */
+
+@media (max-width: 768px) {
+  .home__gallery {
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    padding: 0;
+  }
+
+
+}
