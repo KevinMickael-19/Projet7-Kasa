@@ -20,6 +20,20 @@
     paint-order: stroke fill;
 }
 
+/* Responsive tablette */
+
+@media (max-width: 1024px) {
+  .banner {
+    height: 150px;
+    border-radius: 15px;
+  }
+
+  .banner__title {
+    font-size: 32px;
+  }
+}
+
+/* Responsive mobile */
 @media (max-width: 768px) {
 
     .banner {
