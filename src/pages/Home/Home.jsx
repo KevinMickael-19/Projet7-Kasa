@@ -9,7 +9,7 @@ function Home() {
     <section className="home">
       <div className="home__container">
         <Banner image={bannerImage} text="Chez vous, partout et ailleurs" />
-        <div className="home__cards">
+        <div className="home__gallery">
           {logements.map((logement) => (
             <Card
               key={logement.id}
