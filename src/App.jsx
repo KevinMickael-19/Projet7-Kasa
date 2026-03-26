@@ -1,13 +1,16 @@
 import Router from "./components/Router";
-import Header from "./components/header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import './App.css'
 
 function App() {
   return (
     <>
       <Header />
-      <Router />
-      <Footer />
+      <main className="main">
+        <Router />
+      </main>
+        <Footer />
     </>
   );
 }
