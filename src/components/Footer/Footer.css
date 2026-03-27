@@ -13,3 +13,15 @@
     color: white;
     font-size: 24px;
 }
+
+/* Responsive Mobile */
+
+@media (max-width: 768px) {
+    .footer__logo {
+        width: 122px;
+    }
+
+    .footer__copyright {
+        font-size: 12px;
+    }
+}
