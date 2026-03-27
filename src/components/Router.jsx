@@ -9,13 +9,15 @@ import Footer from "./Footer/Footer"
 function Router() {
   return (
     <BrowserRouter>
-    <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/logement/:id" element={<Logement />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <main className="main">
+      <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/logement/:id" element={<Logement />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       <Footer />
     </BrowserRouter>
   );
