@@ -1,0 +1,35 @@
+.collapse {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.collapse__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  background-color: #FF6060;
+  border-radius: 5px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.collapse__title {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.collapse__arrow {
+  width: 20px;
+  transition: transform 0.3s ease;
+}
+
+.collapse__arrow--open {
+  transform: rotate(180deg);
+}
+
+.collapse__content {
+  padding: 20px;
+  font-size: 16px;
+}
