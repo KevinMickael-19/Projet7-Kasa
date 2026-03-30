@@ -1,6 +1,6 @@
 import "./Collapse.css";
 import { useState } from "react";
-import arrow from "../../assets/images/arrow.svg"
+import arrow from "../../assets/images/arrow.svg";
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +16,17 @@ function Collapse({ title, content }) {
           alt=""
         />
       </div>
-      {isOpen && <div className="collapse__content">{content}</div>}
+      <div
+        className={
+          isOpen
+            ? "collapse__content collapse__content--open"
+            : "collapse__content"
+        }
+      >
+        <div className="collapse__content--inner">{content}</div>
+      </div>
     </div>
   );
 }
 
-export default Collapse
+export default Collapse;
