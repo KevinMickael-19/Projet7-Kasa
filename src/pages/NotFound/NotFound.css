@@ -1,0 +1,42 @@
+.notfound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+    flex: 1;
+}
+
+.notfound__title {
+    font-size: 288px;
+    color: #ff6060;
+}
+
+.notfound__message {
+    font-size: 36px;
+    color: #ff6060;
+    text-align: center;
+}
+
+.notfound__link {
+    color: black;
+    font-size: 18px;
+    font-weight: medium;
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 768px) {
+  .notfound {
+    gap: 113px;
+  }
+
+  .notfound__title {
+    font-size: 96px;
+  }
+
+  .notfound__message {
+    font-size: 18px;
+  }
+
+}
