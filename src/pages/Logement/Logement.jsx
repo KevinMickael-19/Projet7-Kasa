@@ -4,6 +4,7 @@ import "./Logement.css";
 import starActive from "../../assets/images/star-active.svg";
 import starInactive from "../../assets/images/star-inactive.svg";
 import Collapse from "../../components/Collapse/Collapse";
+import Slideshow from "../../components/Slideshow/Slideshow";
 
 function Logement() {
   const { id } = useParams();
@@ -14,13 +15,7 @@ function Logement() {
   const stars = [1, 2, 3, 4, 5];
   return (
     <section className="logement">
-      <div className="logement__slideshow">
-        <img
-          className="logement__slideshow--img"
-          src={logement.cover}
-          alt={logement.title}
-        />
-      </div>
+      <Slideshow images= {logement.images} />
       <div className="logement__info">
         <div className="logement__info-left">
           <h1 className="logement__title"> {logement.title} </h1>
