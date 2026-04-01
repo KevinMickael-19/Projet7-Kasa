@@ -1,8 +1,9 @@
 import { useParams, Navigate } from "react-router-dom";
 import logements from "../../data/logements.json";
 import "./Logement.css";
-import starActive from "../../assets/images/star-active.svg"
-import starInactive from "../../assets/images/star-inactive.svg"
+import starActive from "../../assets/images/star-active.svg";
+import starInactive from "../../assets/images/star-inactive.svg";
+import Collapse from "../../components/Collapse/Collapse";
 
 function Logement() {
   const { id } = useParams();
@@ -10,7 +11,7 @@ function Logement() {
   if (!logement) {
     return <Navigate to="/404" />;
   }
-  const stars = [1, 2, 3, 4, 5]
+  const stars = [1, 2, 3, 4, 5];
   return (
     <section className="logement">
       <div className="logement__slideshow">
@@ -34,22 +35,33 @@ function Logement() {
         </div>
         <div className="logement__info-right">
           <div className="logement__host">
-            <span className="logement__host-name">
-              {logement.hôte.nom}
-            </span>
+            <span className="logement__host-name">{logement.hôte.nom}</span>
             <img className="logement__host-img" src={logement.hôte.image} />
           </div>
           <div className="logement__rating">
             {stars.map((star) => (
               <img
-              key={star}
-              src= {star <= Number(logement.note) ? starActive : starInactive}
-              alt="star"
-              className="logement__star"
+                key={star}
+                src={star <= Number(logement.note) ? starActive : starInactive}
+                alt="star"
+                className="logement__star"
               />
             ))}
           </div>
         </div>
+      </div>
+      <div className="logement__collapses">
+        <Collapse title="Description" content={logement.description} />
+        <Collapse
+          title="Equipements"
+          content={
+            <ul className="logement__equipements-list">
+              {logement.équipements.map((equip) => (
+                <li key={equip}>{equip}</li>
+              ))}
+            </ul>
+          }
+        />
       </div>
     </section>
   );

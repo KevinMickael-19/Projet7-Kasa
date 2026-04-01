@@ -47,6 +47,8 @@
     flex: 1;
 }
 
+/* Informations sur l'hôte/ PARTIE DROITE */
+
 .logement__info-right {
     display: flex;
     flex-direction: column;
@@ -86,7 +88,17 @@
     width: 24px;
     height: 24px;
 }
+/* Partie Equipements */
 
+.logement__collapses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 20px;
+}
+.logement__equipements-list li {
+    margin-bottom: 8px;
+}
 
 /* Responsive Mobile */
 
@@ -129,5 +141,10 @@
     .logement__star {
         width: 16px;
         height: 16px;
+    }
+
+    .logement__collapses {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }

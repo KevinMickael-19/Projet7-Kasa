@@ -45,9 +45,9 @@
   transition: all 0.3s ease;
   pointer-events: none;
   font-size: 16px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #f6f6f6;
-  /*  transition: padding 0.5s ease;
-   padding: 0 20px; */
 }
 
 .collapse__content--open .collapse__content--inner {
@@ -61,7 +61,8 @@
 
 @media (max-width:768px) {
 
-  .collapse__title, .collapse__content--inner {
+  .collapse__title,
+  .collapse__content--inner {
     font-size: 13px;
   }
 
