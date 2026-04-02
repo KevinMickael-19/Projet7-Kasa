@@ -4,6 +4,7 @@ import arrow from "../../assets/images/arrow-slide.svg";
 
 function Slideshow({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const hasMultipleImages = images.length > 1;
 
   const nextImage = () => {
     if (currentIndex === images.length - 1) {
@@ -23,7 +24,7 @@ function Slideshow({ images }) {
 
   return (
     <div className="slideshow">
-      {images.length > 1 && (
+      {hasMultipleImages && (
         <button
           className="slideshow__arrow slideshow__arrow--left"
           onClick={prevImage}
@@ -32,7 +33,7 @@ function Slideshow({ images }) {
         </button>
       )}
       <img src={images[currentIndex]} alt="" className="slideshow__img" />
-      {images.length > 1 && (
+      {hasMultipleImages && (
         <button
           className="slideshow__arrow slideshow__arrow--right"
           onClick={nextImage}
@@ -41,7 +42,7 @@ function Slideshow({ images }) {
         </button>
       )}
 
-      {images.length > 1 && (
+      {hasMultipleImages && (
         <span className="slideshow__counter">
           {currentIndex + 1}/{images.length}
         </span>
