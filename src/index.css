@@ -1,9 +1,19 @@
+:root {
+  --color-primary: #FF6060;
+  --color-text: #1a1a1a;
+  --color-background: #F6F6F6;
+  --color-star-inactive: #E3E3E3;
+  --radius-lg: 25px;
+  --radius-md: 10px;
+  --radius-sm: 5px;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
 }
 
 button {
