@@ -15,11 +15,11 @@ function Logement() {
   const stars = [1, 2, 3, 4, 5];
   return (
     <section className="logement">
-      <Slideshow images= {logement.images} />
+      <Slideshow images={logement.images} />
       <div className="logement__info">
         <div className="logement__info-left">
-          <h1 className="logement__title"> {logement.title} </h1>
-          <p className="logement__location"> {logement.location} </p>
+          <h1 className="logement__title">{logement.title} </h1>
+          <p className="logement__location">{logement.location} </p>
           <div className="logement__tags">
             {logement.tags.map((tag) => (
               <span key={tag} className="logement__tag">
@@ -31,7 +31,7 @@ function Logement() {
         <div className="logement__info-right">
           <div className="logement__host">
             <span className="logement__host-name">{logement.hôte.nom}</span>
-            <img className="logement__host-img" src={logement.hôte.image} />
+            <img className="logement__host-img" src={logement.hôte.image} alt= {logement.hôte.nom} />
           </div>
           <div className="logement__rating">
             {stars.map((star) => (
@@ -52,7 +52,7 @@ function Logement() {
           content={
             <ul className="logement__equipements-list">
               {logement.équipements.map((equip) => (
-                <li key={equip}>{equip}</li>
+                <li className="logement__equipement-item" key={equip}>{equip}</li>
               ))}
             </ul>
           }
