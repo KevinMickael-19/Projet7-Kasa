@@ -1,7 +1,7 @@
 .slideshow {
   position: relative;
   height: 415px;
-  border-radius: 25px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
 }
 
@@ -21,6 +21,7 @@
 
 .slideshow__arrow img {
     width: 80px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
 }
 
 .slideshow__arrow--left {
@@ -39,7 +40,7 @@
   transform: translateX(-50%);
   color: white;
   font-size: 18px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 /* Responsive tablette */
@@ -47,6 +48,8 @@
 @media (max-width: 1024px) {
   .slideshow__arrow img {
     width: 50px;
+    border-radius: var(--radius-md);
+    
   }
 }
 
