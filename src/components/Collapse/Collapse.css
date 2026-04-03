@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: space-between;
   height: 52px;
-  background-color: #FF6060;
-  border-radius: 5px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
   padding: 0 20px;
   cursor: pointer;
 }
@@ -33,6 +33,7 @@
 .collapse__content {
   max-height: 0;
   overflow: hidden;
+  transition: max-height 0.3s ease
 }
 
 .collapse__content--open {
@@ -45,9 +46,9 @@
   transition: all 0.3s ease;
   pointer-events: none;
   font-size: 16px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #f6f6f6;
+  border-bottom-left-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+  background-color: var(--color-background);
 }
 
 .collapse__content--open .collapse__content--inner {
