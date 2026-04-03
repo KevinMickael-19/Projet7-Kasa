@@ -9,19 +9,21 @@
 
 .notfound__title {
     font-size: 288px;
-    color: #ff6060;
+    font-weight: 700;
+    color: var(--color-primary);
 }
 
 .notfound__message {
     font-size: 36px;
-    color: #ff6060;
+    font-weight: 500;
+    color: var(--color-primary);
     text-align: center;
 }
 
 .notfound__link {
     color: black;
     font-size: 18px;
-    font-weight: medium;
+    font-weight: 500;
 }
 
 /* Responsive Mobile */
