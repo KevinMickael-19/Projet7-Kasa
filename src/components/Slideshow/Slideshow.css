@@ -25,7 +25,8 @@
 }
 
 .slideshow__arrow:hover img {
-  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6));
+  transform: scale(1.01);
 }
 
 .slideshow__arrow--left {
