@@ -1,7 +1,7 @@
 .banner {
     height: 223px;
     margin: auto;
-    border-radius: 25px;
+    border-radius: var(--radius-lg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
         var(--bg-image);
     background-size: cover;
@@ -39,8 +39,8 @@
 
     .banner {
         height: 111px;
-        border-radius: 10px;
         justify-content: flex-start;
+        border-radius: var(--radius-md);
     }
 
     .banner__title {
