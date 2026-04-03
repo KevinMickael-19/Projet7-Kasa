@@ -24,6 +24,10 @@
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
 }
 
+.slideshow__arrow:hover img {
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.7));
+}
+
 .slideshow__arrow--left {
   left: 1%;
   transform: translateY(-50%) scaleX(-1);
@@ -56,6 +60,9 @@
 /* Responsive Mobile */
 
 @media (max-width: 768px) {
+  .slideshow {
+    height: 335px;
+  }
   .slideshow__arrow img {
     width: 30px;
   }
