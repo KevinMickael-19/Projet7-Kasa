@@ -4,8 +4,8 @@
   gap: 40px;
   padding: 40px;
   margin: 30px 0;
-  background-color: #F6F6F6;
-  border-radius: 25px;
+  background-color: var(--color-background);
+  border-radius: var(--radius-lg);
 }
 
 /* Responsive tablette */
@@ -25,6 +25,5 @@
     background-color: transparent;
     padding: 0;
   }
-
 
 }
