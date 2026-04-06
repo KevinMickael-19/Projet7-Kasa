@@ -10,12 +10,12 @@ function Home() {
       <div className="home__container">
         <Banner image={bannerImage} text="Chez vous, partout et ailleurs" />
         <div className="home__gallery">
-          {logements.map((logement) => (
+          {logements.map(({id, title, cover}) => (
             <Card
-              key={logement.id}
-              id={logement.id}
-              title={logement.title}
-              cover={logement.cover}
+              key={id}
+              id={id}
+              title={title}
+              cover={cover}
             />
           ))}
         </div>

@@ -21,15 +21,6 @@
     flex-wrap: wrap;
 }
 
-.logement__tag {
-    background-color: var(--color-primary);
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px 20px;
-    border-radius: 10px;
-}
-
 .logement__info-left {
     flex: 1;
 }
@@ -115,7 +106,7 @@
         width: 40px;
         height: 40px;
     }
-       
+
     .logement__collapses {
         grid-template-columns: 1fr;
         gap: 20px;

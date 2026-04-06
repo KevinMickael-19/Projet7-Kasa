@@ -4,6 +4,7 @@ import "./Logement.css";
 import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Rating from "../../components/Rating/Rating";
+import Tag from "../../components/Tag/Tag";
 
 function Logement() {
   const { id } = useParams();
@@ -19,10 +20,8 @@ function Logement() {
           <h1 className="logement__title">{logement.title} </h1>
           <p className="logement__location">{logement.location} </p>
           <div className="logement__tags">
-            {logement.tags.map((tag) => (
-              <span key={tag} className="logement__tag">
-                {tag}
-              </span>
+            {logement.tags.map((tagName) => (
+              <Tag key={tagName}>{tagName}</Tag>
             ))}
           </div>
         </div>
