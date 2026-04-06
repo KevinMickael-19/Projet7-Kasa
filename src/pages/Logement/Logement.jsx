@@ -17,8 +17,8 @@ function Logement() {
       <Slideshow images={logement.images} />
       <div className="logement__info">
         <div className="logement__info-left">
-          <h1 className="logement__title">{logement.title} </h1>
-          <p className="logement__location">{logement.location} </p>
+          <h1 className="logement__title">{logement.title}</h1>
+          <p className="logement__location">{logement.location}</p>
           <div className="logement__tags">
             {logement.tags.map((tagName) => (
               <Tag key={tagName}>{tagName}</Tag>
