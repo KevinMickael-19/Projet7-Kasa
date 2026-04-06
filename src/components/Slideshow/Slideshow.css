@@ -20,8 +20,8 @@
 }
 
 .slideshow__arrow img {
-    width: 80px;
-    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+  width: 80px;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
 }
 
 .slideshow__arrow:hover img {
@@ -46,6 +46,7 @@
   color: white;
   font-size: 18px;
   font-weight: 500;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
 }
 
 /* Responsive tablette */
@@ -54,7 +55,7 @@
   .slideshow__arrow img {
     width: 50px;
     border-radius: var(--radius-md);
-    
+
   }
 }
 
@@ -64,7 +65,12 @@
   .slideshow {
     height: 335px;
   }
+
   .slideshow__arrow img {
     width: 30px;
+  }
+
+  .slideshow__counter {
+    display: none;
   }
 }
