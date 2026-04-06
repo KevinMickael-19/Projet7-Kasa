@@ -63,7 +63,7 @@
 
 @media (max-width: 768px) {
   .slideshow {
-    height: 335px;
+    height: 255px;
   }
 
   .slideshow__arrow img {
