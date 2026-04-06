@@ -1,10 +1,9 @@
 import { useParams, Navigate } from "react-router-dom";
 import logements from "../../data/logements.json";
 import "./Logement.css";
-import starActive from "../../assets/images/star-active.svg";
-import starInactive from "../../assets/images/star-inactive.svg";
 import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import Rating from "../../components/Rating/Rating";
 
 function Logement() {
   const { id } = useParams();
@@ -12,7 +11,6 @@ function Logement() {
   if (!logement) {
     return <Navigate to="/404" />;
   }
-  const stars = [1, 2, 3, 4, 5];
   return (
     <section className="logement">
       <Slideshow images={logement.images} />
@@ -31,18 +29,13 @@ function Logement() {
         <div className="logement__info-right">
           <div className="logement__host">
             <span className="logement__host-name">{logement.hôte.nom}</span>
-            <img className="logement__host-img" src={logement.hôte.image} alt= {logement.hôte.nom} />
+            <img
+              className="logement__host-img"
+              src={logement.hôte.image}
+              alt={logement.hôte.nom}
+            />
           </div>
-          <div className="logement__rating">
-            {stars.map((star) => (
-              <img
-                key={star}
-                src={star <= Number(logement.note) ? starActive : starInactive}
-                alt="star"
-                className="logement__star"
-              />
-            ))}
-          </div>
+          <Rating note={logement.note} />
         </div>
       </div>
       <div className="logement__collapses">
@@ -52,7 +45,9 @@ function Logement() {
           content={
             <ul className="logement__equipements-list">
               {logement.équipements.map((equip) => (
-                <li className="logement__equipement-item" key={equip}>{equip}</li>
+                <li className="logement__equipement-item" key={equip}>
+                  {equip}
+                </li>
               ))}
             </ul>
           }
