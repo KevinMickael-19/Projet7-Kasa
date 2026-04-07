@@ -9,4 +9,4 @@ function Host({ image, nom }) {
   );
 }
 
-export default Host
+export default Host;

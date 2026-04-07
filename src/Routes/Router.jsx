@@ -4,13 +4,13 @@ import About from "../pages/About/About";
 import Logement from "../pages/Logement/Logement";
 import NotFound from "../pages/NotFound/NotFound";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer"
+import Footer from "../components/Footer/Footer";
 
 function Router() {
   return (
     <BrowserRouter>
       <main className="main">
-      <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -23,4 +23,4 @@ function Router() {
   );
 }
 
-export default Router
+export default Router;

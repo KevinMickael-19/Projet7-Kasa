@@ -1,29 +1,29 @@
 .notfound {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 140px;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+  flex: 1;
 }
 
 .notfound__title {
-    font-size: 288px;
-    font-weight: 700;
-    color: var(--color-primary);
+  font-size: 288px;
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
 .notfound__message {
-    font-size: 36px;
-    font-weight: 500;
-    color: var(--color-primary);
-    text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-align: center;
 }
 
 .notfound__link {
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* Responsive Mobile */

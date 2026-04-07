@@ -9,12 +9,8 @@ function About() {
     <section className="about">
       <Banner image={aboutBanner} />
       <div className="about__collapses">
-        {collapses.map(({title, content}) => (
-          <Collapse
-            key={title}
-            title={title}
-            content={content}
-          />
+        {collapses.map(({ title, content }) => (
+          <Collapse key={title} title={title} content={content} />
         ))}
       </div>
     </section>

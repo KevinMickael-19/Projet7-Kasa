@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./NotFound.css"
+import "./NotFound.css";
 
 function NotFound() {
   return (
@@ -8,7 +8,9 @@ function NotFound() {
       <p className="notfound__message">
         Oups ! La page que vous demandez n'existe pas.
       </p>
-    <Link className="notfound__link"  to ="/"> Retourner sur la page d'Accueil</Link>
+      <Link className="notfound__link" to="/">
+        Retourner sur la page d'Accueil
+      </Link>
     </section>
   );
 }
