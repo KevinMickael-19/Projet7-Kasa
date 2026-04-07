@@ -6,7 +6,6 @@ function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
-    
     if (navigator.vibrate) {
       navigator.vibrate(10);
     }

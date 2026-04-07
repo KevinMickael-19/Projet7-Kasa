@@ -7,11 +7,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 52px;
   background-color: var(--color-primary);
-  border-radius: var(--radius-sm);
+  height: 52px;
+  border-radius: var(--radius-md);
   padding: 0 20px;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 .collapse__title {
@@ -33,30 +35,33 @@
 .collapse__content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease
+  padding-top: 0;
+  position: relative;
+  z-index: 1;
+  transition: max-height 0.4s ease-out;
 }
 
 .collapse__content--open {
-  max-height: 500px;
+  margin-top: -10px;
+  max-height: 240px;
+  transition: max-height 0.6s ease-in;
 }
 
 .collapse__content--inner {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-  pointer-events: none;
   font-size: 16px;
-  border-bottom-left-radius: var(--radius-md);
-  border-bottom-right-radius: var(--radius-md);
-  background-color: var(--color-background);
   line-height: 1.8;
+  pointer-events: none;
+  padding: 30px 20px;
+  overflow: hidden;
+  border-bottom-left-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+  background-color: var(--color-background);
 }
 
 .collapse__content--open .collapse__content--inner {
-  opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 /* Responsive Mobile */
