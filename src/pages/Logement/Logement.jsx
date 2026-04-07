@@ -5,6 +5,7 @@ import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Rating from "../../components/Rating/Rating";
 import Tag from "../../components/Tag/Tag";
+import Host from "../../components/Host/Host.jsx";
 
 function Logement() {
   const { id } = useParams();
@@ -26,14 +27,7 @@ function Logement() {
           </div>
         </div>
         <div className="logement__info-right">
-          <div className="logement__host">
-            <span className="logement__host-name">{logement.hôte.nom}</span>
-            <img
-              className="logement__host-img"
-              src={logement.hôte.image}
-              alt={logement.hôte.nom}
-            />
-          </div>
+          <Host nom={logement.hôte.nom} image={logement.hôte.image} />
           <Rating note={logement.note} />
         </div>
       </div>
