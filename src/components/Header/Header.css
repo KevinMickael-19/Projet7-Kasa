@@ -35,3 +35,19 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 450px) {
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header__nav {
+    gap: 20px;
+  }
+
+  .header__logo {
+    width: 120px;
+  }
+
+}
