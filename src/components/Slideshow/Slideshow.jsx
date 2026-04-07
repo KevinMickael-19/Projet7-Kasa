@@ -12,6 +12,9 @@ function Slideshow({ images }) {
     } else {
       setCurrentIndex(currentIndex + 1);
     }
+    if (navigator.vibrate) {
+      navigator.vibrate(10);
+    }
   };
 
   const prevImage = () => {
@@ -19,6 +22,9 @@ function Slideshow({ images }) {
       setCurrentIndex(images.length - 1);
     } else {
       setCurrentIndex(currentIndex - 1);
+    }
+    if (navigator.vibrate) {
+      navigator.vibrate(10);
     }
   };
 

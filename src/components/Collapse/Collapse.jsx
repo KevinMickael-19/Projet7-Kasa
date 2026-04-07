@@ -4,9 +4,17 @@ import arrow from "../../assets/images/arrow.svg";
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+    
+    if (navigator.vibrate) {
+      navigator.vibrate(10);
+    }
+  };
+
   return (
     <div className="collapse">
-      <div className="collapse__header" onClick={() => setIsOpen(!isOpen)}>
+      <div className="collapse__header" onClick={toggleCollapse}>
         <span className="collapse__title">{title}</span>
         <img
           className={
