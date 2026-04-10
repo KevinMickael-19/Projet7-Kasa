@@ -7,19 +7,21 @@ const getNavLinkClass = ({ isActive }) =>
 
 function Header() {
   return (
-    <header className="header">
-      <NavLink to="/">
-        <img src={logo} alt="Kasa" className="header__logo" />
-      </NavLink>
-      <nav className="header__nav">
-        <NavLink to="/" className={getNavLinkClass}>
-          Accueil
+    <div className="container">
+      <header className="header">
+        <NavLink to="/">
+          <img src={logo} alt="Kasa" className="header__logo" />
         </NavLink>
-        <NavLink to="/about" className={getNavLinkClass}>
-          A Propos
-        </NavLink>
-      </nav>
-    </header>
+        <nav className="header__nav">
+          <NavLink to="/" className={getNavLinkClass}>
+            Accueil
+          </NavLink>
+          <NavLink to="/about" className={getNavLinkClass}>
+            A Propos
+          </NavLink>
+        </nav>
+      </header>
+    </div>
   );
 }
 

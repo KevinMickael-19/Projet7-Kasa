@@ -1,13 +1,13 @@
 .banner {
-    height: 223px;
-    margin: auto;
-    border-radius: var(--radius-lg);
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius-lg);
+    height: 223px;
     padding: 20px 30px;
+    margin: auto;
     position: relative;
     overflow: hidden;
 }

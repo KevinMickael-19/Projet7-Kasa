@@ -43,7 +43,7 @@
 
 .collapse__content--open {
   margin-top: -10px;
-  max-height: 240px;
+  max-height: 350px;
   transition: max-height 0.6s ease-in;
 }
 
