@@ -10,7 +10,6 @@ function Collapse({ title, content }) {
       navigator.vibrate(10);
     }
   };
-
   return (
     <div className="collapse">
       <div className="collapse__header" onClick={toggleCollapse}>

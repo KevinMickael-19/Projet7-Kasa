@@ -29,6 +29,7 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
 .main {
@@ -41,5 +42,11 @@ button {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0 3%;
+}
+
+@media (max-width: 768px) {
+  #root {
+    gap: 20px;
+  }
 }
